@@ -1,0 +1,16 @@
+.cabecalho{
+    position: relative;
+    left:25vh;
+    border: solid 2px;
+}
+.barra-lateral{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px blue;
+    height: 98vh;
+    width: 20vh;
+    position: absolute;
+    top: 0px
+    
+    
+}
