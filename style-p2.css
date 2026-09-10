@@ -1,1 +1,32 @@
-.barra-superior{}
+.barra-superior{
+    display: flex;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    width: 99.5vw;
+    border: 2px solid black;
+}
+.barra-superior ul{
+position: relative;
+left: 20vh;
+display: flex;
+gap: 10vh;
+list-style: none;
+}
+.barra-superior a{
+    text-decoration: none;
+    text-align: center;
+}
+.conteudo-principalPgInicial{
+    background-color: #0f0440;
+    display: flex;
+    border: 2px solid;
+    width: 99.5vw;
+    height: 40vh;
+    position: absolute;
+    top: 6vh;
+    left: 0vw;
+    text-align: end;
+    
+}
+
