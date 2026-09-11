@@ -1,10 +1,15 @@
+.logo-inicio{
+    display: flex;
+    width: 7vw;
+    height: 7vh;
+}
 .barra-superior{
     display: flex;
     position: absolute;
     top: 0vh;
     left: 0vh;
     width: 99.5vw;
-    border: 2px solid black;
+    
 }
 .barra-superior ul{
 position: relative;
@@ -14,19 +19,68 @@ gap: 10vh;
 list-style: none;
 }
 .barra-superior a{
+    display: block;
+    padding: 0px 2px;
     text-decoration: none;
     text-align: center;
+    color: rgb(110, 110, 192);
+    transition: backgroundcolor 0.2s ease ;
+}
+.barra-superior a:hover{
+    background-color: #141e61;
+
 }
 .conteudo-principalPgInicial{
-    background-color: #0f0440;
+    background-color: #080139;
     display: flex;
-    border: 2px solid;
+    border-top: gray solid 2px;
     width: 99.5vw;
-    height: 40vh;
+    height: 50vh;
     position: absolute;
     top: 6vh;
     left: 0vw;
-    text-align: end;
+    text-align: center;
+    flex-direction: row;
+}
+.nome-curso{
+    padding: 0vw 3vw;
+    border-left: 1px gray solid;
+    width: 40vw;
+    height: 20vh;
+    position: relative;
+    top: 10vh;
+    left: 40vw;
+    text-align: left;
+    
     
 }
+.nome-curso h1{
+    position: relative;
+    top: -2vh;
+    width: 20vw;
+    border-bottom: 2px  solid rgb(110, 110, 192);
+}
+.nome-curso p{
+    color: rgb(110, 110, 192);
+    text-decoration: line-through;
 
+}
+.logo-principal{
+    display: flex;
+    position: absolute;
+    top: 9vh;
+    left: 10vw ;
+    width: 5vw;
+    height: 40vh;
+    margin: 0vw;
+}
+.conteudo-secundarioPgInicial{
+    position: absolute;
+    top: 56vh;
+    left: 0px;
+    height: 43vh;
+    width: 99.5vw;
+}
+.sobreOcurso{
+
+}
