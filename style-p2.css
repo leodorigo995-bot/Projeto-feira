@@ -1,30 +1,35 @@
 .logo-inicio{
+    position: fixed;
     display: flex;
     width: 7vw;
     height: 7vh;
 }
 .barra-superior{
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 0vh;
     left: 0vh;
     width: 99.5vw;
+    z-index:;
     
 }
 .barra-superior ul{
-position: relative;
+position: fixed;
 left: 20vh;
 display: flex;
 gap: 10vh;
 list-style: none;
+z-index: 5;
 }
 .barra-superior a{
     display: block;
+    position: fixed;
     padding: 0px 2px;
     text-decoration: none;
     text-align: center;
     color: rgb(110, 110, 192);
     transition: backgroundcolor 0.2s ease ;
+    z-index: 5;
 }
 .barra-superior a:hover{
     background-color: #141e61;
@@ -41,6 +46,7 @@ list-style: none;
     left: 0vw;
     text-align: center;
     flex-direction: row;
+    z-index: -8;
 }
 .nome-curso{
     padding: 0vw 3vw;
