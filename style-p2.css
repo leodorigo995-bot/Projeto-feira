@@ -65,6 +65,12 @@ list-style: none;
     text-decoration: line-through;
 
 }
+.nome-curso h2{
+    color: rgb(137, 150, 173);
+    width: 20vw;
+    font-size: 2vh;
+    font-family:Arial, Helvetica, sans-serif
+}
 .logo-principal{
     display: flex;
     position: absolute;
@@ -80,7 +86,27 @@ list-style: none;
     left: 0px;
     height: 43vh;
     width: 99.5vw;
+    display: flex;
 }
 .sobreOcurso{
-
+    position: relative;
+    left: 4vw;
+    top: 5vh;
+    width: 30vw;
+    
+}
+.sobreOcurso h1{
+    position: relative;
+    top: -2vh;
+    width: 20vw;
+    border-bottom: 2px  solid rgb(110, 110, 192);
+    
+}
+.p1{
+    position: relative;
+    top: -3vh;
+    
+}
+.p2{
+    font-size: 2vh;
 }
