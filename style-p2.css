@@ -10,7 +10,10 @@
     top: 0vh;
     left: 0vh;
     width: 99.5vw;
-    
+    background-color: #141e61;
+    border: black solid;
+    height: 6vh;
+    z-index: 6;
 }
 .barra-superior ul{
 position: fixed;
@@ -18,7 +21,7 @@ left: 20vh;
 display: flex;
 gap: 10vh;
 list-style: none;
-z-index: 5;
+
 }
 .barra-superior a{
     display: block;
@@ -28,7 +31,7 @@ z-index: 5;
     text-align: center;
     color: rgb(110, 110, 192);
     transition: backgroundcolor 0.2s ease ;
-    z-index: 5;
+   
 }
 .barra-superior a:hover{
     background-color: #141e61;
@@ -45,7 +48,7 @@ z-index: 5;
     left: 0vw;
     text-align: center;
     flex-direction: row;
-    z-index: -8;
+    
 }
 .nome-curso{
     padding: 0vw 3vw;
@@ -106,10 +109,13 @@ z-index: 5;
     width: 20vw;
     border-bottom: 2px  solid rgb(110, 110, 192);
     
+    
 }
 .p1{
     position: relative;
     top: -3vh;
+    border-bottom: 2px solid;
+    border-style: initial;
     
 }
 .p2{
@@ -134,4 +140,11 @@ z-index: 5;
 .topicoOC p {
     position: relative;
     
+}
+.topicoOC h1{
+    font-size: small;
+    color: rgb(110, 110, 192);
+}
+.img{
+    display: flex;
 }
