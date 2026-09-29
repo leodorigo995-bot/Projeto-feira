@@ -1,0 +1,35 @@
+.cabecalho{
+    width: 150vh;
+    position: relative;
+    left:25vh;
+    border: solid 2px;
+}
+.barra-lateral{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px blue;
+    height: 98vh;
+    width: 20vh;
+    position: absolute;
+    top: 0px
+    
+    
+}
+.materias-curso{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    position: relative;
+    left: 25vh;
+    margin-top: 2vh;
+}
+.cabecalho-materias h2{
+    margin:1vh 1vh -2vh 1vh;
+    
+}
+.materia{
+    border-radius: 10px;
+    border: solid 2px green;
+    height:10vh ;
+    width: 170vh;
+}
