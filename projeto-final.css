@@ -1,0 +1,191 @@
+.logo-inicio{
+    position: fixed;
+    display: flex;
+    width: 7vw;
+    height: 7vh;
+}
+.barra-superior{
+    display: flex;
+    position: fixed;
+    top: 0vh;
+    left: 0vh;
+    width: 99.5vw;
+    background-color: #141e61;
+    border: black solid;
+    height: 6vh;
+    z-index: 6;
+}
+.barra-superior ul{
+position: fixed;
+left: 20vh;
+display: flex;
+gap: 10vh;
+list-style: none;
+
+}
+.barra-superior a{
+    display: block;
+    position: fixed;
+    padding: 0px 2px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(110, 110, 192);
+    transition: backgroundcolor 0.2s ease ;
+   
+}
+.barra-superior a:hover{
+    background-color: #141e61;
+
+}
+.conteudo-principalPgInicial{
+    background-color: #080139;
+    display: flex;
+    border-top: gray solid 2px;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 6vh;
+    left: 0vw;
+    text-align: center;
+    flex-direction: row;
+    
+}
+.nome-curso{
+    padding: 0vw 3vw;
+    border-left: 1px gray solid;
+    width: 40vw;
+    height: 20vh;
+    position: relative;
+    top: 10vh;
+    left: 40vw;
+    text-align: left;
+    
+    
+}
+.nome-curso h1{
+    position: relative;
+    top: -2vh;
+    width: 20vw;
+    border-bottom: 2px  solid rgb(110, 110, 192);
+}
+.nome-curso p{
+    color: rgb(110, 110, 192);
+    text-decoration: line-through;
+
+}
+.nome-curso h2{
+    color: rgb(137, 150, 173);
+    width: 20vw;
+    font-size: 2vh;
+    font-family:Arial, Helvetica, sans-serif
+}
+.logo-principal{
+    display: flex;
+    position: absolute;
+    top: 9vh;
+    left: 10vw ;
+    width: 5vw;
+    height: 40vh;
+    margin: 0vw;
+}
+.conteudo-secundarioPgInicial{
+    position: absolute;
+    top: 56vh;
+    left: 0px;
+    height: 43vh;
+    width: 100%;
+    display: flex;
+}
+.sobreOcurso{
+    position: relative;
+    left: 4vw;
+    top: 5vh;
+    width: 30vw;
+    
+}
+.sobreOcurso h1{
+    position: relative;
+    top: -2vh;
+    width: 20vw;
+    border-bottom: 2px  solid rgb(110, 110, 192);
+    
+    
+}
+.p1{
+    position: relative;
+    top: -3vh;
+    border-bottom: 2px solid;
+    border-style: initial;
+    
+}
+.p2{
+    font-size: 2vh;
+}
+.objetivosCurso{
+    display: grid;
+    grid-template-columns: 10vw 20vw;
+    grid-template-rows: 10vh 10vh 10vh;
+    position: relative;
+    left: 30vw;
+    top: 7vh;
+    gap: 1vh;
+    
+}
+.topicoOC {
+    font-size: 2vh;
+    ;
+    
+
+}
+.topicoOC p {
+    position: relative;
+    
+}
+.topicoOC h1{
+    font-size: small;
+    color: rgb(110, 110, 192);
+}
+.img{
+    display: flex;
+}
+
+
+/* PARTE MURILO----------------------------------------------------------------------------------------- */
+
+.pt-murilo{
+    width: 100vw;
+    border-top: #080139 5vh solid;
+    position: relative;
+    top: 95vh;
+}
+
+.oq-vc-vai-aprender{
+    left: 5vw;
+    width: 20vw;
+    position: relative;
+    left:20vw;
+}
+.materias{
+    display: grid;
+    grid-template-columns: 10vw 30vw;
+    grid-template-rows: 15vh 15vh 15vh 15vh;
+    row-gap: 2vw;
+    position: relative;
+    left: 20vw;
+}
+.materiaPg{
+    
+  
+    border-bottom: 1px rgb(93, 72, 184) solid;
+
+    
+}
+.materias h1{
+    font-size: 2vh;
+}
+.materiaPg img{
+    height: 8vh;
+    position: relative;
+    left: 2vw;
+    top: 3vh;
+}
