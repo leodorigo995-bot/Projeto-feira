@@ -1,0 +1,9 @@
+.part-principal{
+    display: grid;
+    grid-template-columns: 20vw 50vw;
+    border: blue 2px solid;
+    height: 50vh;
+}
+.introd{
+    border: red 2px solid;
+}

@@ -1,0 +1,202 @@
+/* ===== VARIÁVEIS ===== */
+:root {
+  --fundo: #020524;
+  --azul: #1f6bff;
+  --azul-claro: #3d86ff;
+  --texto: #d6dcf0;
+  --branco: #ffffff;
+  --linha: rgba(31, 107, 255, 0.45);
+}
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Exo 2", sans-serif;
+  color: var(--branco);
+  text-transform: uppercase;
+}
+
+h1 span, h2 span, h3 span {
+  color: var(--azul);
+}
+
+/* ===== CABEÇALHO (grid-template + grid-area) ===== */
+.topo {
+  display: grid;
+  grid-template:
+    "logo menu faixas" 70px
+    / 120px 1fr 120px;
+  align-items: center;
+  padding: 0 36px;
+  border-bottom: 1px solid var(--azul);
+}
+
+
+.menu {
+  grid-area: menu;
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+}
+
+.menu a {
+  color: var(--texto);
+  text-decoration: none;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+}
+
+
+/* ===== LAYOUT PRINCIPAL (grid-template + grid-area) ===== */
+.pagina {
+  /* max-width: 1100px; */
+  margin: 0 auto;
+  padding: 48px 36px 56px;
+  display: grid;
+  grid-template:
+    "intro    intro    ilustra" auto
+    "back     divisor  front"   auto
+    "destaque destaque destaque" auto
+    / 1fr     1px      1fr;
+  column-gap: 36px;
+  row-gap: 48px;
+}
+
+.intro      { grid-area: intro; }
+.destaque   { grid-area: destaque; }
+
+/* ===== INTRODUÇÃO ===== */
+.rotulo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--azul-claro);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.rotulo::after {
+  content: "";
+  width: 80px;
+  height: 1px;
+  background: var(--azul);
+}
+
+.intro h1 {
+  font-size: 46px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.intro h1 span {
+  display: block;
+}
+
+.intro p {
+  max-width: 520px;
+}
+
+
+/* ===== CARDS ===== */
+.divisoria {
+  background: var(--linha);
+}
+
+
+.card h2 {
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.subtitulo {
+  color: var(--azul-claro);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  color: var(--azul-claro);
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 22px 0 10px;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+.tecnologias li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--azul);
+}
+
+.aprender li::before {
+  content: "😎";
+  position: absolute;
+  left: 0;
+  color: var(--azul);
+}
+
+.card hr {
+  border: none;
+  border-top: 1px solid var(--linha);
+  margin-top: 24px;
+}
+
+/* ===== DESTAQUE FINAL (grid interno) ===== */
+.destaque {
+  display: grid;
+  grid-template:
+    "icone texto" auto
+    / 130px 1fr;
+  align-items: center;
+  border: 1.5px solid var(--azul);
+  padding: 28px;
+  border-radius: 15px;
+}
+
+
+
+.destaque-texto {
+  grid-area: texto;
+  padding-left: 28px;
+}
+
+.destaque-texto h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.destaque-texto p {
+  font-size: 13px;
+}
