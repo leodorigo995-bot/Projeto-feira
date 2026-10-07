@@ -53,7 +53,7 @@ position: fixed;
 left: 20vh;
 top: 2vh;
 display: flex;
-gap: 10vh;
+gap: 15vh;
 list-style: none;
 
 }
@@ -63,12 +63,12 @@ list-style: none;
     padding: 0px 2px;
     text-decoration: none;
     text-align: center;
-    color: rgb(110, 110, 192);
+    color: var(--azul-claro);
     transition: backgroundcolor 0.2s ease ;
    
 }
 .barra-superior a:hover{
-    background-color: #141e61;
+    background-color: var(--fundo);
 
 }
 .conteudo-principalPgInicial{
@@ -86,7 +86,7 @@ list-style: none;
 }
 .nome-curso{
     padding: 0vw 3vw;
-    border-left: 1px gray solid;
+    border-left: 1px var(--azul) solid;
     width: 40vw;
     height: 20vh;
     position: relative;
@@ -100,11 +100,12 @@ list-style: none;
     position: relative;
     top: 1vh;
     width: 20vw;
-    border-bottom: 2px  solid rgb(110, 110, 192);
+    border-bottom: 2px  solid var(--azul);
 }
 .nome-curso p{
-    color: rgb(110, 110, 192);
+    color: var(--azul-claro);
     text-decoration: line-through;
+    
     
 
 }
@@ -114,7 +115,8 @@ list-style: none;
     color: rgb(137, 150, 173);
     width: 20vw;
     font-size: 2vh;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+   
     
 }
 .rotulo {
@@ -156,6 +158,7 @@ list-style: none;
     top: -2vh;
     width: 20vw;
     border-bottom: 2px  solid rgb(110, 110, 192);
+    margin-top: 2vh;
     
     
 }
@@ -283,7 +286,7 @@ list-style: none;
 }
 
 .intro h1 {
-  font-size: 46px;
+  font-size: 9vh;
   line-height: 1.1;
   margin-bottom: 20px;
 }
@@ -390,10 +393,13 @@ list-style: none;
 
 /* parte givani-------------------------------------------------------------------- */
 
-.part-giovanni{
+.part-bd-it{
     height: 100vh;
     position: relative;
     top: 150vh;
+    margin-bottom: 30vh;
+   
+    
 }
 .part-principal{
     display: grid;
@@ -410,7 +416,7 @@ list-style: none;
    
 }
 .introd h1 {
-  font-size: 46px;
+  font-size: 9vh;
   line-height: 1.1;
   margin-bottom: 20px;
 }
@@ -447,7 +453,7 @@ top: -10vh;
 }
 .desen{
      border-right: var(--azul) solid 1px;
-    width: 30vw;
+    width: 40vw;
 }
 .desen h3{
 color: var(--azul);
@@ -482,6 +488,7 @@ color: var(--azul);
 .tag{
     position: relative;
     top: 20vh;
+    left: -1vw;
     border: var(--azul) 1px solid; 
     border-radius: 1vw;
     text-align: center;
@@ -492,4 +499,59 @@ color: var(--azul);
 .tag p{
     position: relative;
     top: -1vh;
+}
+
+/* --------------------------------- */
+
+.introd2{
+    position: relative;
+    
+    left: 20vw;
+    height: 29vh;
+   
+}
+.introd2 h1 {
+  font-size: 9vh;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  position: relative;
+    top:-2vh ;
+}
+
+.introd2 h1 span {
+  display: block;
+}
+
+.introd2 p {
+  max-width: 520px;
+  
+  
+}
+.img-princ2 {
+    display: flex;
+    
+    widht: 20vw;
+    height: 20vw;
+}
+.img-princ2 img{
+position: relative;
+top: -10vh;
+left: 6vw;
+}
+.tag2{
+    display: flex;
+    border: var(--azul-claro) 1px solid;
+    border-radius: 2vh;
+    width: 60vw;
+    height: 10vh;
+    position: relative;
+    top: 115vh;
+    left: 20vw;
+    color: var(--azul);
+    
+}
+.tag2 p{
+    position: relative;
+    left:20vw;
+    top: 4vh;
 }
