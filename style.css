@@ -37,6 +37,9 @@ h1 span, h2 span, h3 span {
     width: 7vw;
     height: 7vh;
 }
+.logo-inicio img{
+  border-radius: 50%;
+}
 .barra-superior{
     display: flex;
     position: fixed;
@@ -137,7 +140,12 @@ list-style: none;
     width: 5vw;
     height: 40vh;
     margin: 0vw;
+    
 }
+/* .logo-principal img{
+  box-shadow: 20px 20px 50px 15px var(--fundo);
+  border-radius: 15%;
+} */
 .conteudo-secundarioPgInicial{
     position: absolute;
     top: 56vh;
@@ -180,6 +188,7 @@ list-style: none;
     left: 30vw;
     top: 7vh;
     gap: 1vh;
+
     
 }
 .topicoOC {
@@ -196,8 +205,22 @@ list-style: none;
     font-size: small;
     color: rgb(110, 110, 192);
 }
-.img{
+.img1{
     display: flex;
+    height: 10vh;
+    position: relative;
+    left: 1vh;
+
+}
+.img2{
+  display: flex;
+  position: relative;
+  left: 1vh;
+  height: 11vh;
+}
+.img3{
+  display: flex;
+  height: 10vh;
 }
 
 /* PARTE MURILO----------------------------------------------------------------------------------------- */
